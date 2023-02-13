@@ -1,0 +1,1 @@
+C:\Users\<$USER>\AppData\Roaming\Microsoft\Windows\Start Menu\Programs\
