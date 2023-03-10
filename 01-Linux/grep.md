@@ -10,3 +10,9 @@ echo "https://cdimage.debian.org/cdimage/cloud/bullseye/latest/debian-11-generic
 * $ matches the end of the string.
 * Putting this together, the pattern matches zero or more non-comma characters at the end of the string.
 * When there are multiple possible matches, grep prefers the one that starts earliest. So the entire last field will be matched.
+
+
+## Search multiple user in /etc/passwd 
+```
+grep -E -w '^(root|user1|user2)' /etc/passwd
+```
