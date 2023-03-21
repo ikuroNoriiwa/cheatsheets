@@ -4,7 +4,7 @@
 ```yaml
 - name: 
     ...
-  when: "{{ item.key }} != 'root'" # --> should not use Jinja2 template ({{}}, or {% %})
+  when: "{{ item.key }} != 'root'" # --> should not use Jinja2 template 
   with_items: my_var
 ```
 Correct form :
