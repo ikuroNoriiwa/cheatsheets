@@ -1,3 +1,17 @@
+# Vault cli 
+
+## Init vault server 
+```
+vault operator init -tls-skip-verify
+```
+
+## unseal vault server 
+```
+vault operator unseal 
+```
+This operation has to be done for every unseal keys
+
+
 # Request Hashicorp vault with curl 
 
 
