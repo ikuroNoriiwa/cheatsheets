@@ -83,3 +83,33 @@ Set manual ip address
 set deviceconfig system type static
 set deviceconfig system ip-address <LOCAL_IP> netmask <MASK> default-gateway <GATEWAY_IP> dns-seeting servers primary <DNS_IP>
 ```
+
+## Create security policy 
+```
+set rulebase security rules <POLICY_NAME> from <SOURCE_ZONE> to <DESTINATION_ZONE> rule-type <interzone|intrazone|universal> source <SOURCE_IP|COUNTRY_CODE_SOURCE|IP_RANGE_SOURCE|any> destination <DEST_IP|COUNTRY_CODE_DEST|IP_RANGE_DEST|any> application <APPLICATION_NAME|any> service <SERVICE_NAME|any> action <allow|deny>
+```
+
+## Create Security zone 
+```
+set zone <ZONE_name> network <layer3|layer2|tap>
+```
+
+## Create Service 
+```
+set service <SERVICE_NAME> protocol <tcp|udp> port <PORT_NUMBER>
+```
+
+## Create NAT policy 
+```
+set rulebase nat rules <RULE_NAME> from <SOURCE_ZONE> to <DESTINATION_ZONE> nat-type ipv4 
+```
+
+## Create address 
+```
+set address <ADDRESS_NAME> ip-range 192.168.1.10-192.168.1.20
+```
+
+## Create application Filter 
+```
+set application-filter <FILTER_NAME> risk <1-5>
+```
