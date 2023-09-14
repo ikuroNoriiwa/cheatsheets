@@ -113,3 +113,18 @@ set address <ADDRESS_NAME> ip-range 192.168.1.10-192.168.1.20
 ```
 set application-filter <FILTER_NAME> risk <1-5>
 ```
+
+## show antivirus profile cli : 
+```
+show profiles virus 
+```
+
+## Create antivirus profil
+```
+set profiles virus <PROFILE_NAME> packet-capture <yes|no> application <APPLICATION_NAME> action <alert|allow|default|drop|reset-both|reset-client|reset-server>
+```
+
+## Use Antivirus Profile on security policies 
+```
+set rulebase security rules <POLICY_NAME> profile-setting profile virus <ANTIVIRUS_PROFILE_NAME>
+```
