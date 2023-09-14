@@ -10,6 +10,14 @@ configure
 commit
 ```
 
+### Show Set 
+Export config as set commands 
+```
+> 
+set cli pager off 
+set cli config-output-format set 
+```
+
 ### Usefull Commands 
 
 Show important informations about the system (hostname, ip address, public ip, gateway, SN, ...)
